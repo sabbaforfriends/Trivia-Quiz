@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Compila server.c con -pthread
+gcc server.c -o server -pthread -Wall
+if [ $? -ne 0 ]; then
+    echo "Errore nella compilazione del server"
+    exit 1
+fi
+
+# Avvia il server in un nuovo terminale
+gnome-terminal -- bash -c "./server; exec bash"
+
+# Attendi 2 secondi
+sleep 1
+
+# Compila client.c con -pthread
+gcc client.c -o client -pthread -Wall
+if [ $? -ne 0 ]; then
+    echo "Errore nella compilazione del client"
+    exit 1
+fi
+
+# Avvia il client in un nuovo terminale
+gnome-terminal -- bash -c "./client 4242; exec bash"

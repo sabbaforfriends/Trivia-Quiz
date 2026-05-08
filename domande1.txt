@@ -1,0 +1,10 @@
+Quanti giocatori ci sono in campo per ogni squadra durante una partita di pallavolo? [in numero]
+6
+Qual è il nome del colpo usato per iniziare il gioco in pallavolo?
+battuta
+Come si chiama il giocatore specializzato nella difesa, riconoscibile dalla maglia diversa?
+libero
+Quanti punti bisogna ottenere per vincere un set (escluso il tie-break)? [in numero]
+25
+Qual è il massimo numero di tocchi consentiti alla squadra prima di inviare la palla oltre la rete? [in numero]
+3
